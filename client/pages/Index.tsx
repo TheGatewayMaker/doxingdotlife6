@@ -713,18 +713,21 @@ export default function Index() {
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {post.country && (
-                          <span className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
-                            🌍 {post.country}
+                          <span className="inline-flex items-center gap-1 bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
+                            <GlobeIcon className="w-3 h-3" />
+                            {post.country}
                           </span>
                         )}
                         {post.city && (
-                          <span className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
-                            🏙️ {post.city}
+                          <span className="inline-flex items-center gap-1 bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
+                            <MapPinIcon className="w-3 h-3" />
+                            {post.city}
                           </span>
                         )}
                         {post.server && (
-                          <span className="inline-block bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
-                            🖥️ {post.server}
+                          <span className="inline-flex items-center gap-1 bg-accent/20 text-accent px-3 py-1 rounded-full text-xs font-medium">
+                            <ServerIcon className="w-3 h-3" />
+                            {post.server}
                           </span>
                         )}
                       </div>
